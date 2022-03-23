@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>My Website</title>
+<style>
+  @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
+.MainContainer {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+p {
+	color: black;
+	font-size: 1.4rem;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+}
+
+
+/* mainpage Section */
+#mainpage .mainpage {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#mainpage .main-top {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#mainpage .main-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#mainpage .main-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#mainpage .main-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#mainpage .main-bottom .icon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+	
+   
+}
+#mainpage .main-bottom .icon1 {
+	height: 80px;
+	width: 180px;
+	margin-bottom: 20px;
+
+   
+}
+#mainpage .main-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#mainpage .main-item p {
+	color: white;
+	text-align: left;
+}
+/* End mainpage Section */
+
+/* secondpage Section */
+#secondpage .secondpage {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+}
+#secondpage .secondpage-items {
+	/* max-width: 400px; */
+	width: 100%;
+}
+#secondpage .secondpage-item {
+	background-color: #f3f3f3;
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+    height: 250px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 8px 0 #0000002c;
+	transition: 0.3s ease box-shadow;
+}
+#secondpage .secondpage-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#secondpage .icon {
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#secondpage .icon1 {
+	width: 170px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#secondpage .secondpage-info h1 {
+	font-size: 3.5rem;
+	font-weight: 500;
+	
+	text-align: center;
+}
+#secondpage .secondpage-info h2 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+}
+/*End secondpage Section */
+
+
+
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px) {
+
+
+
+	/* mainpage Section */
+	#mainpage .main-bottom .main-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+ 
+	/* End mainpage Section */
+
+
+	/* secondpage  */
+	#secondpage .secondpage {
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+	}
+	#secondpage .secondpage-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	#secondpage .secondpage-item {
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+	}
+	#secondpage .secondpage-item .icon {
+		height: 100px;
+		width: 100px;
+	}
+	#secondpage .secondpage-item .icon img {
+		object-fit: contain;
+	}
+	#secondpage .secondpage-item .secondpage-info {
+		width: 100%;
+		text-align: center;
+		padding-left: 20px;
+	}
+	/* End secondpage  */
+}
+/* End Media Query For Tablet */
+
+/* Media Query For Desktop */
+@media only screen and (min-width: 1200px) {
+
+
+	#mainpage .main-bottom .main-item {
+		flex-basis:35%;
+		margin: 1.5%;
+	}
+}
+/* End  Media Query For Desktop */
+</style>
+</head>
+
+<body>
+ 
+
+ 
+
+  <section id="mainpage">
+    <div class="mainpage MainContainer">
+     
+      <div class="main-bottom">
+		  
+        <div class="main-item">
+			<a href="">
+          <div ><img class="icon1" src="https://user-images.githubusercontent.com/30186107/29488525-f55a69d0-84da-11e7-8a39-5476f663b5eb.png" /></div>
+          <h2>HTML CSS Javascript</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
+            architecto placeat beatae tenetur officia quod</p>
+			</a>
+        </div>
+
+        <div class="main-item">
+			<a href="">
+          <div ><img class="icon" src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png" /></div>
+          <h2>C Sharp(#)</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
+            architecto placeat beatae tenetur officia quod</p>
+			</a>
+        </div>
+        <div class="main-item">
+			<a href="">
+          <div ><img class="icon" src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png" /></div>
+          <h2>Java</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
+            architecto placeat beatae tenetur officia quod</p>
+			</a>
+        </div>
+        <div class="main-item">
+			<a href="">
+          <div ><img class="icon" src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png" /></div>
+          <h2>PHP</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
+            architecto placeat beatae tenetur officia quod</p>
+			</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+
+
+  
+
+  <section id="secondpage">
+    <div class="secondpage MainContainer">
+      <div class="secondpage-items">
+        <div class="secondpage-item">
+			<a href="">
+          <div ><img class="icon1" src="https://user-images.githubusercontent.com/30186107/29488525-f55a69d0-84da-11e7-8a39-5476f663b5eb.png" /></div>
+          <div class="secondpage-info">
+            <h1>Projects</h1>
+          
+          </div>
+		</a>
+        </div>
+        <div class="secondpage-item">
+          <div ><img class="icon" src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png" /></div>
+          <div class="secondpage-info">
+            <h1>Quiz</h1>
+           
+          </div>
+        </div>
+        <div class="secondpage-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="secondpage-info">
+            <h1>Address</h1>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+ 
+</body>
+
+</html>
